@@ -38,15 +38,25 @@ header span:before {
   margin: 10px;
 }
 
-header h3:after {
+header span:after {
   content: "";
   border-top: solid 5px black ;
-  display: block;
-  margin-left: 210px;
+  position: absolute;
+  margin-left: 5px;
+  width: 9999px;
+  top: 13px;
 }
 
 header span {
   color: teal;
+  position: relative;
+}
+
+footer span {
+  color: teal;
+  text-transform: uppercase;
+  font-weight: bold;
+
 }
 
 h2 {
@@ -75,4 +85,10 @@ h2 {
 h1 {
   font-size: 200px;
   margin: 0;
+}
+
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
 }
