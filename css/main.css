@@ -4,16 +4,18 @@ body, figure, h3, span, header, span {
 }
 
 body {
-  margin: 50px;
+  margin: 50px auto;
+  width: 80%;
 }
 
 h1 {
-  font-size: 275px;
+  font-size: 175px;
   margin: 0;
 }
 
 h2 {
   padding-left: 100px;
+  padding-top: 25px;
   font-family: 'Prata', serif;
   color: gray;
   font-size: 250%;
@@ -78,7 +80,7 @@ article span {
 #images {
   display: flex;
   justify-content: space-between;
-  width: 1050px;
+  width: 800px;
 }
 
 #top {
