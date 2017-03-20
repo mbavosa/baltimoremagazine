@@ -1,4 +1,4 @@
-body, figure, h3, span, header, span {
+body, figure, h3, span, header, span, p {
   margin: 0;
   padding: 0;
 }
@@ -24,6 +24,11 @@ h2 {
 
 h3 {
   font-size: 1.5em;
+}
+
+article h3 {
+  margin-top: 20px;
+  margin-bottom: 5px;
 }
 
 header {
@@ -69,7 +74,8 @@ footer span {
 footer {
   position: absolute;
   clear: both;
-  width: 75%;
+  width: 65%;
+  margin-top: 50px;
 }
 
 article span {
@@ -91,11 +97,19 @@ article span {
 #bottom {
   display: flex;
   justify-content: space-between;
-  margin-right: 100px;
   line-height: 1.5em;
   margin-top: 10px;
-  column-fill: auto;
 }
+
+#bottom {
+-webkit-columns: 300px 3;
+  -moz-columns: 300px 3;
+       columns: 300px 3;
+   column-count: 3;
+   column-gap: 1em;
+}
+
+columns: <column-width> || <column-count>;
 
 #bottom div {
   margin-right: 40px;
@@ -127,7 +141,7 @@ sidebar p {
   padding: 20px;
 }
 
-  sidebar #innerbox:before {
+sidebar #innerbox:before {
   content: "";
   height: 480px;
   width: 180px;
